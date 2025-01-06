@@ -37,10 +37,14 @@ class _MainPageState extends State<MainPage> {
       appBar: AppBar(title: const Text('BottomNavigationBar'),centerTitle: true,),
       body: pages[_naviItemIndex],
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
+        /*type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.deepPurple,
-        fixedColor: Colors.white, //สีปุ่มที่ถูกเลือก
+        fixedColor: Colors.white, //สีปุ่มที่ถูกเลือก*/
         
+        type: BottomNavigationBarType.shifting,
+        selectedItemColor: Colors.yellow,
+        unselectedItemColor: Colors.white,
+
         showSelectedLabels: true, //แสดงข้อวามบนปุ่มที่ถูกเลือก
         showUnselectedLabels: true, //แสดงข้อวามบนปุ่มที่ไม่ถูกเลือก
         currentIndex: _naviItemIndex,
